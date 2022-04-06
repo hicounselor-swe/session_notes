@@ -120,7 +120,7 @@ function spiralOrder(matrix) {
 }
 
 // Time Complexity -> O(n) where n is the number of cells in the matrix // O(l * w)
-// Space Complexity -> O(1) space
+// Space Complexity -> O(n) space
 
 const input = [
   [1, 2, 3],
@@ -233,3 +233,8 @@ const root1 = linkedListNodes1[0];
 // 1. Identify if a LinkedList is a Palindrome
 // 1. With a Doubly Linked List Remove the kth node from the head.
 // 1. In Java or C#, create a Linked List that is generic and is not specific to an integer value type.
+
+
+
+
+
