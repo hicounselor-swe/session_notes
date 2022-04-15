@@ -128,3 +128,13 @@ console.log(numberOfWaysToMakeChange(10, [1, 5, 10, 25])); // 4
 
 // O(dn) where d === denom.length and n is n
 // O(n) bc of tabs size
+
+// Homework
+// https://leetcode.com/problems/permutations-ii
+// https://leetcode.com/problems/subsets
+// /*
+// Given an array of positive integers representing coin denominations and a single non-negative integer n representing
+// a target amount of money, write a function that returns the smallest number of coins needed to make change for
+// (to sum up to) that target amount using the given coin denominations
+// If it's impossible to make change for the target amount, return -1.
+// */
