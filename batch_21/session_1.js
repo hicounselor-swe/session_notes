@@ -114,4 +114,7 @@ console.log(myLinkedList.head);
 
 
 // Homework:
-// - https://leetcode.com/problems/spiral-matrix/
+// https://leetcode.com/problems/spiral-matrix/
+// https://leetcode.com/problems/reverse-linked-list/
+// Given a Linked List and an integer, determine if the sum of
+//  all the values within the nodes is equal to the target number
