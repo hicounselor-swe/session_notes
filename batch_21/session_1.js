@@ -61,9 +61,6 @@
 
 //  https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
-// Homework:
-// - https://leetcode.com/problems/spiral-matrix/
-
 // Linked List
 
 class ListNode {
@@ -111,3 +108,10 @@ myLinkedList.insert("A");
 console.log(myLinkedList.head);
 myLinkedList.insert("B");
 console.log(myLinkedList.head);
+
+// Given a linked list, determine if the linked list is corrupted
+
+
+
+// Homework:
+// - https://leetcode.com/problems/spiral-matrix/
