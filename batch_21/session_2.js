@@ -232,12 +232,71 @@ for (let i = 0; i < 5; i++) {
 
 // Implement a hashmap
 
-function hashFunc(str, capacity) {
+function hashFunc(str) {
   let hash = 0;
   for (let i = 0; i < str.length; i++) {
     let letter = str[i];
     hash = (hash << 5) + letter.charCodeAt(0);
-    hash = (hash & hash) % capacity;
+    hash = hash & hash;
   }
   return hash;
+}
+
+
+class HashMap {
+  constructor() {
+    this.capacity = 4;
+    this.buckets = Array(this.capacity)
+      .fill()
+      .map(() => {
+        return [];
+      });
+    this.count = 0;
+  }
+
+  set(key, value) {
+    // average O(1) time, worst case O(N)
+    const hash = myHashFunc(key);
+    const index = hash % this.capacity;
+    const currentBucket = this.buckets[index];
+
+    let isReplacement = false;
+    for (let i = 0; i < currentBucket.length; i++) {
+      let [k, v] = currentBucket[i];
+      if (k === key) {
+        currentBucket[i] = [key, value];
+        isReplacement = true;
+      }
+    }
+
+    if (isReplacement === false) {
+      currentBucket.push([key, value]);
+      this.count++;
+    }
+
+    if (this.count >= this.capacity) {
+      this.resize(); // O(N)
+    }
+  }
+
+  get() {} // HOMEWORK
+  delete() {} // HOMEWORK
+
+  resize() {
+    this.capacity *= 2;
+    this.count = 0;
+    const newBuckets = Array(this.capacity)
+      .fill()
+      .map(() => {
+        return [];
+      });
+    const oldBuckets = this.buckets;
+    this.buckets = newBuckets;
+    for (let bucket of oldBuckets) {
+      for (let pairs of bucket) {
+        let [key, value] = pairs;
+        this.set(key, value);
+      }
+    }
+  }
 }
