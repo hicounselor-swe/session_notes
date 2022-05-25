@@ -246,3 +246,12 @@ console.log(hasCycle(root)); // false
 
 // O(n) time where n is number of nodes in linkedlist
 // O(1) space
+
+
+// 1. Given a Linked List and an integer, determine if the sum of all the values within the nodes is equal to the target number
+// 1. Reverse a singly Linked List
+// 1. Merge together 2 Linked lists
+// 1. Find the Kth Node from the end of the Linked List
+// 1. Identify if a Linked List is a Palindrome
+// 1. With a Doubly Linked List Remove the kth node from the head
+// 1. In Java or C#, create a Linked List that is generic and is not specific to an integer value type.
