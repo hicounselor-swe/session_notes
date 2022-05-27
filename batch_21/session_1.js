@@ -118,3 +118,23 @@ console.log(myLinkedList.head);
 // https://leetcode.com/problems/reverse-linked-list/
 // Given a Linked List and an integer, determine if the sum of
 //  all the values within the nodes is equal to the target number
+
+
+// let max = 0
+//     let buy = null
+//     let sell = null
+//     let profit = null
+//     for (let i = 0; i < prices.length; i++) {
+//         let curr = prices[i];
+//         if (buy === null || curr < buy) {
+//             buy = curr;
+//             sell = null;
+//             continue;
+//         }
+//         if (sell === null || curr > sell) {
+//             sell = curr;
+//             profit = sell - buy;
+//             max = Math.max(profit, max);
+//         }
+//     }
+//     return max;
