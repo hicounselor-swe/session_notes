@@ -242,3 +242,15 @@ example[5].next = example[2];
 // 1. Merge together 2 Linked lists
 // 1. Find the Kth Node from the end of the Linked List
 // 1. Identify if a Linked List is a Palindrome
+
+
+
+// Arrays and string
+// Be very familiar with for loops
+// aka: sliding-window, looping in reverse
+
+let arr = [1,2,3,4,5,65,7,8,9,0];
+
+for(let i = 0; i < arr.length - 2; i++) {
+  console.log(arr[i], arr[i + 1], arr[i + 2]);
+}
