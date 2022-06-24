@@ -36,14 +36,14 @@
 
 // // 1. Reverse a singly Linked List
 
-// const linkedListNodes1 = "5612"
-//   .split("")
-//   .map((char) => new ListNode(Number(char)));
-// linkedListNodes1.forEach((node, i, self) => {
-//   if (i + 1 === self.length) return;
-//   node.next = self[i + 1];
-// });
-// const root = linkedListNodes1.at(0);
+const linkedListNodes1 = "ABBC"
+  .split("")
+  .map((char) => new ListNode(Number(char)));
+linkedListNodes1.forEach((node, i, self) => {
+  if (i + 1 === self.length) return;
+  node.next = self[i + 1];
+});
+const root = linkedListNodes1.at(0);
 
 // // null  5 -> 6 -> 1 -> 2 -> null
 // //   ^   ^    ^
@@ -68,21 +68,21 @@
 
 // // return prev
 
-// const reverseLinkedList = (head) => {
-//   if (!head) return head;
-//   let prev = null;
-//   let curr = head;
-//   let next = curr.next;
-//   while (curr) {
-//     next = curr.next;
+const reverseLinkedList = (head) => {
+  if (!head) return head;
+  let prev = null;
+  let curr = head;
+  let next = curr.next;
+  while (curr) {
+    next = curr.next;
 
-//     curr.next = prev;
-//     // move sliding window over
-//     prev = curr;
-//     curr = next;
-//   }
-//   return prev;
-// };
+    curr.next = prev;
+    // move sliding window over
+    prev = curr;
+    curr = next;
+  }
+  return prev;
+};
 
 // let answer = reverseLinkedList(root);
 // let curr = answer;
