@@ -136,6 +136,7 @@ class Vertex {
 
 class UnconnectedGraph {
   constructor(...vertices) {
+
     this.graph = vertices;
   }
 }
